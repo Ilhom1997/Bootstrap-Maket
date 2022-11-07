@@ -1,0 +1,4 @@
+.header__content-title
+{
+    font-size: calc(28 + 30 * (100vw / 320));
+}
