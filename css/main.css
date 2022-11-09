@@ -22,6 +22,55 @@ body
     Fill: Solid rgba(17, 24, 39, 0.52);
    
 }
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.navbar__box-animation
+{
+    position: relative;
+}
+.navbar__box-animation::before
+{
+    content: '';
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    border: 5px solid #d946ef;
+    top: 50px;
+    left: -4%;
+    animation: scale 2s linear infinite;
+}
+
+
+.navbar__box-animation::after
+{
+    content: '';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    display: block;
+    border: 5px solid #28A8EA;
+    top: 200px;
+    right: -5%;
+    animation: rotate 3s ease infinite;
+}
+
+
 .all-btn
 {
     max-width: 132px;
@@ -86,6 +135,10 @@ body
     font-size: 14px;
     font-weight: 500;
     transition: .5s;
+}
+.navbar__links:hover
+{
+    color: #d946ef;
 }
 .header__content-title
 {
@@ -438,7 +491,7 @@ body
 }
 
 
-.fonav__content
+/* .fonav__content
 {
     display: flex;
     width: 100%;
@@ -505,4 +558,84 @@ body
     display: flex;
     align-items: center;
    column-gap: 15px;
+} */
+
+.footer__list 
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    color: #fff;
+    column-gap: 10px;
+}
+.footer__links
+{
+    color: #fff;
+    transition: .3s;
+}
+.footer__links:hover
+{
+    color: #d946ef;
+}
+.footer__span
+{
+    padding: 0 10px;
+}
+
+.footer__social
+{
+    display: flex;
+    column-gap: 20px;
+}
+.footer__title
+{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.footer-link
+{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    transition: .3s;
+}
+.footer-link:hover
+{
+    color: #D946EF;
+}
+
+.footer__content
+ {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E5E7EB; 
+ }
+.footer__bottom-title
+{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Rubik' sans-serif;
+    color: #fff;
+}
+.footer__bottom-links
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 53px;
+}
+.footer__bottom-link
+{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'DM Sans' sans-serif;
+    transition: .5s;
+}
+.footer__bottom-link:hover
+{
+    color: #2F8F5B;
 }
