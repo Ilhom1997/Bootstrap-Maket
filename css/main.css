@@ -399,8 +399,16 @@ body
     justify-content: center;
     align-items: center;
     column-gap: 17px;
-    color: #28A8EA;
-    transition: .5s;
+}
+.section__icons
+{
+    color: #fff;
+    transition: .3s;
+}
+.section__icons:hover
+{
+    color: #d946ef;
+    transform: rotate(-180deg);
 }
 
 
