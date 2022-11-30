@@ -70,7 +70,23 @@ body
     animation: rotate 3s ease infinite;
 }
 
-
+.main-btn{
+    max-width: 200px;
+    height: 70px;
+    width: 100%;
+    color: #fbbd68;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #242424;
+    background: #242424;
+    box-shadow: 4px 4px 10px #000, -4px -4px 10px #353535,
+    inset -2px -2px 4px #353535, inset 2px 2px 4px #000;
+    transition: all 0.5s;
+}
 .all-btn
 {
     max-width: 132px;
@@ -83,6 +99,16 @@ body
     font-size: 14px;
     transition: .5s;
     text-align: center;
+}
+.main-btn:hover
+{
+    color: #66c1fa;
+    cursor: pointer;
+    border: 3px solid #66c1fa;
+}
+.main-btn:focus
+{
+    outline: none;
 }
 .header__menu 
 {
@@ -371,7 +397,7 @@ body
 
 .section-contact__card
 {
-    border-radius: 34px;
+    border-radius: 44% 56% 63% 37% / 48% 65% 35% 52%;
     background: #402F8F;
     width: 270px;
     height: 266px;
@@ -379,7 +405,13 @@ body
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 22px 18px 0 #000000;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.5),
+    25px 35px 20px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+.section-contact__card:hover
+{
+    border-radius: 50%;
 }
 .section-col-title
 {
